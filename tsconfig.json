@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2016",       
+   // "baseUrl": "./modules",
+    "outDir": "./dist/",                         
+    "module": "commonjs", 
+    "types": ["cypress","cypress-file-upload"],                               /* Specify what module code is generated. */
+  
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+ 
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+
+   
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    
+    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+  },  "include": ["./node_modules/cypress", 
+                  "cypress/**/*.ts",
+                  "index.d.ts",
+                  "cypress-plugin-tab.d.ts"
+                ]
+}
